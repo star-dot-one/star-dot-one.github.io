@@ -33,6 +33,10 @@ p, ul, ol {
     margin-bottom: 0;
 }
 
+main {
+    margin-top: 24px;
+}
+
 /* font size */
 
 p, li, td, th {
@@ -51,16 +55,18 @@ h1 {
     line-height: 48px;
 
     position: relative;
-    top: 14px;
+    top: -10px;
 }
 
 h2 {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     line-height: 24px;
 
     position: relative;
-    top: 6px;
+    top: 5px;
+
+    margin-bottom: 24px;
 }
 
 h3 {
@@ -77,7 +83,8 @@ h3 {
 #wrapper {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 96px 1fr 96px;
+    grid-template-rows: 1fr 72px;
+    grid-gap: 24px;
 
     width: calc(4 * 240px + 3 * 24px);
     margin: 0 auto;
@@ -85,17 +92,15 @@ h3 {
     min-height: 100vh;
 }
 
-main {
-    display: grid;
-    grid-template-columns: 240px 240px 240px 240px;
-    grid-gap: 24px;
-
+main, footer {
     align-self: start;
 }
 
-header, footer {
-    padding-top: 24px;
-    padding-bottom: 24px;
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 240px);
+    grid-auto-rows: minmax(240px, auto);
+    grid-gap: 24px;
 }
 
 /* table */
