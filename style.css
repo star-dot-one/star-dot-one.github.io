@@ -1,0 +1,115 @@
+/* font */
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, YuGothic, 'Yu Gothic', 游ゴシック体, 游ゴシック, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ ゴシック', 'MS Gothic', sans-serif;
+    letter-spacing: 0.05rem;
+}
+
+h1 {
+    font-family: 'HelveticaNeue-CondensedBold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    letter-spacing: 0;
+}
+
+/* color */
+
+body {
+    color: #333333; /* 8000-N */
+}
+a:link {
+    color: #3b6094; /* 0099-R70B */
+}
+a:visited {
+    color: #9c1e4f; /* 0099-R20B */
+}
+a:hover, a:active {
+    color: #d54125; /* 0099-Y70R */
+}
+
+/* margin */
+
+h1, h2, h3, h4, h5, h6,
+p, ul, ol {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* font size */
+
+p, li, td, th {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-size: 14px;
+    line-height: 24px;
+    position: relative;
+    top: 7px;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 48px;
+
+    position: relative;
+    top: 14px;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+
+    position: relative;
+    top: 6px;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 24px;
+
+    position: relative;
+    top: 7px;
+}
+
+/* grid */
+
+#wrapper {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 96px 1fr 96px;
+
+    width: calc(4 * 240px + 3 * 24px);
+    margin: 0 auto;
+
+    min-height: 100vh;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 240px 240px 240px 240px;
+    grid-gap: 24px;
+
+    align-self: start;
+}
+
+header, footer {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+/* table */
+
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 0;
+}
+
+/* test image */
+
+body {
+    /*background-image: url('baseline.svg');*/
+}
