@@ -1,8 +1,7 @@
 /* font */
 
 body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, YuGothic, 'Yu Gothic', 游ゴシック体, 游ゴシック, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ ゴシック', 'MS Gothic', sans-serif;
-    letter-spacing: 0.05rem;
+    font-family: 'Roboto Mono', YuGothic, 'Yu Gothic', 游ゴシック体, 游ゴシック, monospace;
 }
 
 h1 {
@@ -35,6 +34,11 @@ p, ul, ol {
 
 main {
     margin-top: 24px;
+}
+
+ul, ol {
+    margin-left: 0;
+    padding-left: 0;
 }
 
 /* font size */
